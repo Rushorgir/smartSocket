@@ -24,6 +24,7 @@ It lets you remotely toggle a relay (power socket) from your phone while keeping
 
 ## ✨ Features
 - 🎯 **Remote Relay Control** — Toggle connected load from Blynk app (V0)
+- ⏱️ **Delayed ON Scheduler** — Set relay to turn ON after X minutes (V1)
 - ⚡ **Fast ESP32 Runtime** — Lightweight firmware loop with stable control flow
 - 🔒 **Safer Defaults** — Relay starts OFF at boot
 - 🌐 **WiFi + Cloud Control** — Blynk-connected smart switching from anywhere
@@ -62,6 +63,9 @@ In Blynk app:
 - Create a button widget mapped to `V0`
 - Set mode to `Switch`
 - Use values `0` and `1`
+- Create a numeric input (or slider) mapped to `V1`
+- Send minutes value to schedule ON (example: `15` turns ON after 15 minutes)
+- Send `0` on `V1` to clear a pending schedule
 
 ---
 
